@@ -10,6 +10,16 @@ Entry for the make.fun bounty "Write the best summary of 11 November's world new
 
 The program holds the summary as a string constant and writes it to `/output/entry.txt` with a trailing newline. It is deterministic: no network, no clock, no randomness, so running it twice writes the same bytes.
 
+## Running it
+
+The output path `/output/entry.txt` is the make.fun harness path. On a
+plain machine, create the directory first or it fails:
+
+```bash
+sudo mkdir -p /output
+python3 main.py
+```
+
 ## Files
 
 - `main.py` — the program
